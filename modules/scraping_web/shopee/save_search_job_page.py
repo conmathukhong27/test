@@ -9,8 +9,22 @@ def run(data_lake, driver):
   page_list = []
   url = f"https://shopee.vn"
 
-
-# Khởi tạo trình duyệt
+#   user_reponse = requests.get(user_info)
+#   user_reponse.encoding = 'utf-8'
+#   user_data = StringIO(user_reponse.text)
+#   df = pd.read_csv(user_data)
+#   user_data = df.to_dict(orient='records')
+#   for record in user_data:
+#     user_cookie,record['status'] = login(driver, record['Account'], record['Pass'])
+#     if user_cookie is not None:
+#       record['user_cookie'] = user_cookie
+#       record['flag'] = True
+#     else:
+#       record['user_cookie'] = None
+#       record['flag'] = False
+#     query = {'account_id': record['Account Linkedln']}
+#     user_collection.update_one(query, {'$set': record}, upsert=True)
+# # Khởi tạo trình duyệt
 #   log_in= f"https://shopee.vn/user/login"
 
 # # Mở trang đăng nhập Shopee
